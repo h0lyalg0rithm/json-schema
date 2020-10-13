@@ -13,9 +13,6 @@ rvm:
 
 sudo: false
 
-install:
-  - bundle install --retry=3
-
 matrix:
   include:
     - rvm: "1.9"
