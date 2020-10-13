@@ -24,4 +24,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency "bundler"
 
   s.add_runtime_dependency "addressable", '>= 2.4'
+  s.add_runtime_dependency "json", ">= 1.7"
 end
