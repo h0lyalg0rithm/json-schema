@@ -1,4 +1,5 @@
 language: "ruby"
+cache: bundler
 
 rvm:
   - "1.9"
@@ -12,16 +13,8 @@ rvm:
   - "jruby-9.1"
 
 sudo: false
-
-matrix:
-  include:
-    - rvm: "1.9"
-      gemfile: "gemfiles/Gemfile.ruby_19.x"
-    - rvm: "jruby-1.7"
-      gemfile: "gemfiles/Gemfile.ruby_19.x"
-    - rvm: "2.5"
-      gemfile: "gemfiles/Gemfile.multi_json.x"
-    - rvm: "2.5"
-      gemfile: "gemfiles/Gemfile.yajl-ruby.x"
-    - rvm: "2.5"
-      gemfile: "gemfiles/Gemfile.uuidtools.x"
+gemfile:
+  - gemfiles/Gemfile.ruby_19.x
+  - gemfiles/Gemfile.multi_json.x
+  - gemfiles/Gemfile.yajl-ruby.x
+  - gemfiles/Gemfile.uuidtools.x
