@@ -1,4 +1,3 @@
-require 'open-uri'
 require 'pathname'
 require 'bigdecimal'
 require 'digest/sha1'
@@ -12,6 +11,7 @@ require 'json-schema/errors/schema_parse_error'
 require 'json-schema/errors/json_load_error'
 require 'json-schema/errors/json_parse_error'
 require 'json-schema/util/uri'
+require 'open-uri'
 
 module JSON
 
